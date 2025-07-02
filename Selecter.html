@@ -328,6 +328,11 @@ Who is your favourite:
   <li>Pluto</li>
 </ul> -->
 
+  <button>Start Animation</button>
+  <div style="background:green;height:100px;width:100px;position:absolute;"></div>
+
+
+
 
 
     <script src="jquery-3.7.1.min.js"> </script>
@@ -338,8 +343,8 @@ Who is your favourite:
         // })
 
           $(document).ready(function(){
-           $("h1").html("Goodbye");
-           $("h1").css('color','red')
+          //  $("h1").html("Goodbye");
+          //  $("h1").css('color','red')
         //    $("h1").css({color:"green"}) 
         //    $(".demo").css({fontSize:"200px"})
         //    $("#hello").css({fontSize:"10px"})
@@ -429,9 +434,13 @@ Who is your favourite:
         //   $("#intro").css("background-color", "yellow");
 
 
-        // $("*").css("background-color", "yellow");
+        //  $("*").css("background-color", "yellow");
 
-             
+          $(document).ready(function(){
+          $("button").click(function(){
+          $("div").animate({left: '400px'});
+          });
+          })   
         })
 
     </script>
