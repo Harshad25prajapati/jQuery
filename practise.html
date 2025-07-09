@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    *{
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .box ul{
+        background-color: blanchedalmond;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 20px;
+        border-radius: 20px;
+        color: blue;
+    }
+
+</style>
+
+<button class="btn1">fadeToggle</button>
+<button class="btn4">slidetoogle</button> 
+
+<div class="box">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>page</li>
+        <li>contact</li>
+        <li>Info</li>
+    </ul>
+</div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    
+    <script>
+      
+       $(document).ready(function(){
+       $(".btn1").click(function(){
+       $("ul").fadeToggle();
+       });
+       $(".btn4").click(function(){
+        $("ul").slideToggle();
+       })
+       });
+       
+    </script>
+</body>
+</html>
