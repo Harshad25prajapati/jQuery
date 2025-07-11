@@ -21,9 +21,33 @@
         color: blue;
     }
 
+
+    /* #animation {
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 35px;
+    background-color: red;
+    margin-top: 200px;
+    position: relative;} */
+
+     #animation {
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 35px;
+    background-color: red;
+    position: relative;}
+
+
+       #box1{
+        height:50px;
+        width:50px;
+        background:red;
+        position:relative;
+      }
+
 </style>
 
-<button class="btn1">fadeToggle</button>
+<!-- <button class="btn1">fadeToggle</button>
 <button class="btn4">slidetoogle</button> 
 
 <div class="box">
@@ -34,8 +58,31 @@
         <li>contact</li>
         <li>Info</li>
     </ul>
-</div>
+</div> -->
+
+
+
+
+
+<!-- 
+<button id="click">Animation</button>
+<div id="animation"> Hello</div> -->
     
+
+<!-- <button id="click">Animation</button> <br>
+<div id="animation"> Hello</div> -->
+
+
+
+  <!-- <input type='button' value='Click' id='btn'>
+  <div id='box1'></div> -->
+
+
+
+  <button>Start Animation</button>
+  <div style="background-color: red;  position: absolute; color: white; font-weight: 600;" >
+    Harshad
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -43,14 +90,76 @@
     
     <script>
       
-       $(document).ready(function(){
-       $(".btn1").click(function(){
-       $("ul").fadeToggle();
-       });
-       $(".btn4").click(function(){
-        $("ul").slideToggle();
-       })
-       });
+    //    $(document).ready(function(){
+    //    $(".btn1").click(function(){
+    //    $("ul").fadeToggle();
+    //    });
+    //    $(".btn4").click(function(){
+    //     $("ul").slideToggle();
+    //    })
+    //    });
+
+
+
+//     $(document).ready(function() {
+//     $("#click").click(function() {
+//       $("#animation").animate({
+//         bottom: '250px',
+//     }, 150); 
+//     $("#animation").css('background-color', 'green')
+//     });
+//      $("#click").click(function() {
+//       $("#animation").animate({
+//         bottom: '0px',
+//       }, 150); 
+//     });
+//   })
+
+
+
+    // $(document).ready(function(){
+    //    $("#click").click(function(){
+    //    $("#animation").fadeOut();
+    //    });
+    //    $("#click").click(function(){
+    //     $("#animation").fadeIn();
+    //    })
+    //    });
+
+        
+//          $(document).ready(function(){
+//     $("#btn").click(function(){
+//       $("#box1").animate({
+//         width:'70px',
+//         height:'70px',
+//       },1000).animate({
+//         left:'100px',
+//       }).animate({
+//         top:'100px',
+//       }).animate({
+//         left:'0px',
+//       }).animate({
+//         top:'0px',
+//         opacity:0,
+//       });
+//     });
+//   });
+
+
+
+
+   $(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "fast");
+    div.animate({fontSize: '45px'}, "fast");
+  });
+    $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '0px'}, "fast");
+    div.animate({fontSize: '20px'}, "fast");
+  });
+});
        
     </script>
 </body>
