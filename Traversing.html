@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     ul, li, a, span{
+        border:1px solid green;
+        display: block;
+        padding: 10px;
+     }
+    </style>
+
+   <!-- <h1 class="hello">Hello</h1> -->
+
+<!-- 
+   <input type="text">
+   <button id="setdata"> click me</button> -->
+
+
+<!-- 
+   <h1>hello</h1>
+    <button id="setdata"> click me</button>  -->
+
+
+
+
+
+    <ul>
+        <li>
+            <a href="">
+                <span>Hello</span>
+            </a>
+        </li>
+    </ul>
+
+     <button id="setdata"> click me</button> 
+
+    <script src="jquery-3.7.1.min.js"> </script>
+    <script>
+    $(document).ready(function(){
+        // $("h1").html("bye")
+        //  $("h1").text("hello world!")
+
+
+
+      $("#setdata").click(function(){
+        // $("input").val("demo")
+        // $("input").css("color", "red")
+        // $("input").css("background-color" , "green")
+
+
+        // $("h1").append("welcome")
+
+        // $("h1").prepend("bye")
+
+
+        // $("h1").after("welcome")
+
+
+        // $("h1").before("good bye")
+
+
+        // $("h1").remove()
+
+      
+
+
+
+
+        $("span").parent().css({bordercolor:"red"})
+
+      })
+
+
+
+    })
+
+    </script>
+</body>
+</html>
