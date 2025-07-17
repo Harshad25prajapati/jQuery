@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .button {
+            width: 150px;
+            background-color: black;
+            padding: 20px;
+            position: relative;
+            height: 60px;
+        }
+
+        .off {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease;
+        }
+    </style>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="button">
+        <span class="off"></span>
+    </div>
+
+    <button id="offBtn" style="background-color: red; color: white;">Off</button>
+    <button id="onBtn" style="background-color: green; color: white;">On</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#offBtn').click(function() {
+                $('.off').text('Off')
+                $('.off').css({'background-color': 'red'});
+                  $('.off').css({ 'left': '10px',});
+                  $('.off').css({ 'color': 'white'});
+                    
+            });
+
+            $('#onBtn').click(function() {
+                $('.off').text('On')
+                $('.off').css({'background-color': 'green'});
+                $('.off').css({ 'left': '130px'});
+                $('.off').css({ 'color': 'white'});
+                
+            });
+        });
+    </script>
+</body>
+</html>

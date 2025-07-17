@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .box {
+      width: 300px;
+      height: 500px;
+      background-image: url('https://pngimg.com/d/bulb_PNG1243.png'); 
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+  <button id="offBtn">Off</button>
+  <button id="onBtn">On</button>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $("#offBtn").click(function(){
+      $(".box").css("background-image", "url(https://pngimg.com/d/bulb_PNG1243.png)");
+    });
+
+   
+    $("#onBtn").click(function () {
+      $(".box").css("background-image", "url(https://www.pngkit.com/png/full/4-45221_light-bulb-png-transparent-light-bulb-png.png)");
+    });
+  </script>
+</body>
+</html>
